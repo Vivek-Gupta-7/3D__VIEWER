@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Eye</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="./eye.css" rel="stylesheet" />
+  
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="img-fluid1" src="./logo.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#parts">Parts</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+  <!-- <model-viewer> HTML element -->
+  <model-viewer id="model" src="./realistic_human_eye.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+  </div>
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">View in your space</button>
+    <div id="ar-prompt">
+      <img src="ar_hand_prompt.png">
+    </div>
+  </model-viewer>
+  
+
+  <div class="details"  id="function">
+    <h2>Functions of Eye</h2>
+    <p>
+      Eyes are the sensory organs that allow you to see. Human eyes capture visible light from the world around and turn it into a form your brain uses <br>to create your sense of vision. The eye is a complex organ that is made up of many different parts, each with its own. Eyes constantly adjust the amount of <br>light thry get in.  Eyes help us to see colour separating light into its different wave lenghts and detecting the relative intensity of each wavelength.
+    </p>
+    <div class="funct">
+      <div id="aboutfunction">
+        <button id="function"><h3>Voice<img src="./volume.svg"></h3></button>
+        <div id="function-detail"></div>
+      </div>
+    </div>
+  </div>
+  <div class="parts" id="parts">
+    <div class="main">
+    <div class="funct button">
+      <div id="aboutfunction">
+        <button id="button1">
+          <h3>Choroid</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+
+      <div id="aboutfunction">
+        <button id="button2">
+          <h3>Conjunctive</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+      <div id="aboutfunction">
+        <button id="button3">
+          <h3>Cornea</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+
+      <div id="aboutfunction">
+        <button id="button4">
+          <h3>Eyelens</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+      <div id="aboutfunction">
+        <button id="button5">
+          <h3>Iris</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+      <div id="aboutfunction">
+        <button id="button6">
+          <h3>Pupil</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+      <div id="aboutfunction">
+        <button id="button7">
+          <h3>Retina</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+      <div id="aboutfunction">
+        <button id="button8">
+          <h3>Optic Nerve</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+      <div id="aboutfunction">
+        <button id="button9">
+          <h3>Sclera</h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+    </div>
+    <img style="height:80vh;" src="./eyepng.jpg">
+  </div>
+</div>
+
+  <script src="./eye2.js"></script>
+  <script src="eye.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</body>
+
+</html>
