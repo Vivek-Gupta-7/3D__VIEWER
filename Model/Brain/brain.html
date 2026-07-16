@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Human Brain</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./brain.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img class="img-fluid1" src="./logo.png" alt="" />
+        </a>
+        <ul class="nav-links">
+              <li><a href="#model">3D Model</a></li>
+              <li><a href="#function">Function</a></li>
+              <li><a href="#parts">Parts</a></li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </div>
+    </nav>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="human_brain_cerebrum__brainstem.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+
+  
+    <div class="details">
+      <h2>Functions of Brain</h2>
+      <p>
+        The brain controls many functions in the body, including thoughtsand decisions,memories and emotions,movement,sensation,automatic behavior,<br>organ function,speech and language,learning and remembering and digestion.
+        The brain is the most complex organ in the human body and responsible <br> for all the qualities that define our humanity.
+        Together,the brain and spinal cord that extendsfrom it make up the central nervous system.The brain is <br>enclosed within the skull which provides frontal,lateral and dorsal protection.
+        The brain is made up of nervous tissues,blood vessels ,nerves and <br>about 100 billion nervr cell.<br>
+    </p>
+      <div class="funct">
+        <div id="aboutfunction">
+          <button id="function"><h3>Voice<img src="./Details/volume.svg"></h3></button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="parts"  id="parts">
+      <div class="main">
+        <h1 style="color: white;">Parts of Human Heart</h1>
+        <div class="box">
+          <div class="box1">
+            <a class="boxes" href="./Details/forbrain.html">
+              <h3 style="padding: 0 0 ;">Forebrain</h3><img src="./Details/forebrain.png">
+            </a>
+          
+          </div>
+          <div class="box2">
+            <a class="boxes" href="./Details/midbrainhtml.html">
+              <h3 style="padding: 0 0 ;">Midbrain</h3><img src="./Details/midbrain.png">
+            </a>
+          </div>
+          <div class="box3">
+            <a href="./Details/hindbrainhtml.html" class="boxes">
+              <h3 style="padding: 0 0;">Hindbrain</h3><img src="./Details/hindbrain.png" alt="">
+            </a>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./brain.js"></script>
+    <script src="./brain2.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
