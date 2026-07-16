@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Arduino</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar">
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="img-fluid1" src="./logo.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#parts">Parts</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+  <!-- <model-viewer> HTML element -->
+  <model-viewer id="model" src="arduino_uno_r3_elegoo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+    <div id="ar-prompt">
+      <img src="ar_hand_prompt.png">
+    </div>
+  </model-viewer>
+
+
+  <div class="details" id="function">
+    <h2>ARDUINO</h2>
+    <P> <b>What is arduino</b> :
+      Arduino operates on the fundamental principle of controlling hardware through software, utilizing a
+      microcontroller to execute programmed instructions.
+    </P>
+    <p><b> Working principal of arduino</b>:<br>
+      The working principle of an Arduino is based on its microcontroller, which can read inputs (such as signals from
+      sensors) and generate outputs (such as controlling motors or LEDs) according to the code uploaded to it.<br><br>
+      1. <b>Coding</b>: Create a program using the Arduino programming language within the Arduino Integrated
+      Development Environment (IDE).<br>
+
+      2.<b> Compilation</b>: The IDE translates the written code into machine code that the microcontroller can
+      understand.<br>
+
+      3.<b> Upload</b>: Transfer the compiled code to the Arduino board via USB or serial connection.<br>
+
+      4.<b>Execution</b> : The microcontroller runs the uploaded program, performing the specified tasks.<br>
+
+      5. <b>Interaction</b>: The program interacts with external devices through input/output operations, reading data
+      from sensors and controlling actuators using digital and analog pins.<br>
+
+    </p>
+    <p><b>How Arduino Works</b><br>
+      1. The microcontroller executes the program, reading from sensors and writing to actuators.<br>
+      2. The program uses loops (e.g., setup() and loop()) to repeatedly execute tasks.<br>
+      3. Conditional statements and functions control the program flow.<br>
+      4. Complex tasks are streamlined with libraries and built-in functions, such as serial communication.<br>
+
+
+    </P>
+    <div class="funct">
+      <div id="aboutfunction">
+        <button id="function">
+          <h3>Voice<img src="./volume.svg"></h3>
+          <!-- <button id="pauseButton"><h3>Pause/<br>Resume</h3></button>    -->
+        </button>
+        <div id="function-detail"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parts" id="parts">
+    <div class="main">
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button1">
+            <h3>USB connector</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button2">
+            <h3>Power point</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button3">
+            <h3>Microcontroller</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button4">
+            <h3>Analog input pins</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button5">
+            <h3>Digital pins</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button6">
+            <h3>Reset switch</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button7">
+            <h3>Crystal oscillator</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button8">
+            <h3>USB interface chip</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button9">
+            <h3>TX RX LEDs</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+
+      <img style="height:60vh" src="./arduino pic.jpg">
+    </div>
+  </div>
+
+
+  <script src="./aurdino2.js"></script>
+  <script src="script.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</body>
+
+</html>
