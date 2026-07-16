@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Porsche</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <nav>
+      <div class="navbar">
+  
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img class="img-fluid1" src="./IMAGE/logo.png" alt="" />
+        </a>
+  
+        <ul class="nav-links">
+          <li><a href="#model">3D Model</a></li>
+          <li><a href="#function">Function</a></li>
+          <li><a href="#parts">Parts</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </div>
+    </nav>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="porsche_911_gt2_rs_with_angle_eyes.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+
+    <div class="details" id="function">
+      <h2>PORSCHE</h2>
+      <P><b>Porsche 911 or Pfister is a two-door 2+2 high performance rear-engined sports car introducedin september 1964 by Porsche AG of Stuttgart,Germany.It has a rear-mounted flat-six engine and originally a torsion bar suspension.The car has been continuously enhanced through the years but the basic concept has remained unchanged.The engine were air-cooled until the introduction of the 996 series in 1998.<br>
+        The 911 has been modified by private teams and by the factory itself for racing, rallying, and other forms of automotive  competition.It is among the most sucessful competition cars.<br>
+
+         
+      </P>
+      <div class="funct">
+        <div id="aboutfunction">
+          <button id="function">
+            <h3>Voice<img src="./Details/volume.svg"></h3>
+            <button id="pauseButton"><h3>Pause/<br>Resume</h3></button>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+    </div>
+    <div class="parts" id="parts">
+      <div class="main">
+        <h1 style="color: white;">Parts of Porsche</h1>
+        <div class="box">
+          <div class="box1">
+            <a class="boxes" href="./Details/chamber.html">
+              <h3 style="padding: 0 0 ;">Exterior Parts</h3><img src="./IMAGE/Exterior parts.png">
+            </a>
+            <a class="boxes" href="./Details/Arteries and veins.html">
+              <h3 style="padding: 0 0 ;">Engine & Drivetrain</h3><img src="./IMAGE/Arteries and veins.png">
+            </a>
+            <a href="./Details/CardiacCycle.html" class="boxes">
+              <h3 style="padding: 0 0;" class="text"></h3>Interior & controls</h3><img src="./IMAGE/cardiac.png" alt="">
+            </a>
+  
+            <!-- <a class="boxes" href="./Details/chamber.html" ><h3 style="padding: 0 0 ;">Chamber</h3><img src="./IMAGE/chamber.png"></a>
+          <a class="boxes" href="./Details/chamber.html" ><h3 style="padding: 0 0 ;">Chamber</h3><img src="./IMAGE/chamber.png"></a> -->
+          </div>
+          <div class="box2">
+            <a class="boxes" href="./Details/valves.html">
+              <h3 style="padding: 0 0 ;">Valves</h3><img src="./IMAGE/valves.png">
+            </a>
+            <a class="boxes" href="./Details/wall.html">
+              <h3 style="padding: 0 0 ;">Wall</h3><img class="wall" src="./IMAGE/Wall.png">
+            </a>
+  
+            <a class="boxes" href="./Details/conductionsystem.html">
+              <h3 style="padding: 0 0 ;" class="text">Conduction system</h3><img src="./IMAGE/conduction system.png">
+            </a>
+          </div>
+          <div class="box3">
+            <a href="./Details/ventricles.html" class="boxes">
+              <h3 style="padding: 0 0;">Ventricles</h3><img src="./IMAGE/ventricles.png" alt="">
+            </a>
+  
+            <a href="./Details/Bloodcirculation.html" class="boxes">
+              <h3>Blood Circulation</h3><img src="./IMAGE/Blood circulation.png" alt="">
+            </a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
