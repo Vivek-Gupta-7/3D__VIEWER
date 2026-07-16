@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Motherboard</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar">
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="img-fluid1" src="./logo.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#parts">Parts</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+  <!-- <model-viewer> HTML element -->
+  <model-viewer id="model" src="motherboard.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" environment-image="the-motherboard-components.png">
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+    <div id="ar-prompt">
+      <img src="ar_hand_prompt.png">
+    </div>
+  </model-viewer>
+
+
+  <div class="details" id="function">
+    <h2>Functions of Motherboard</h2>
+    <P>
+
+      A motherboard is the main circuit board in a computer or other electronic devices. Also serve as the backbone that
+      connects all essential components, allowing them to communicate and work together. Key components such as the CPU
+      (central processing unit), RAM (random access memory), storage devices, and external devices (like USBs and
+      graphics cards) are either connected directly to the motherboard or interact with it through expansion slots and
+      ports.<br><br>
+
+
+      It connect all the components of a computer together, allowing them to communicate and perform tasks.
+      It's the main
+      printed circuit board (PCB) in a computer, and is usually made of a firm, non-conductive material like plastic
+      with thin layers of copper or aluminum foil . These layers, called traces, form circuits that connect
+      the various components. Also contains sockets and slots for connecting other components, such as
+      RAM, USB ports, and external devices like Wi-Fi, Ethernet, and graphics cards.
+
+
+
+
+    </P>
+    <div class="funct">
+      <div id="aboutfunction">
+        <button id="function">
+          <h3>Voice<img src="./volume.svg"></h3>
+        </button>
+        <div id="function-detail"></div>
+      </div>
+    </div>
+  </div>
+  <!--edit-->
+
+  <div class="parts" id="parts">
+    <div class="main">
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button1">
+            <h3>CPU Socket</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button2">
+            <h3>Chipset</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button3">
+            <h3>RAM Slots </h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button4">
+            <h3>Expansion Slots </h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button5">
+            <h3>Power Connector</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button6">
+            <h3>BIOS/UEFI Chip</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button7">
+            <h3>CMOS Battery</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button8">
+            <h3>I/O Ports</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button9">
+            <h3>USB Headers</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button10">
+            <h3>Southbridge/Northbridge</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button11">
+            <h3>Heatsinks and Cooling Components</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button12">
+            <h3>20-pin ATX Power Connector</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button13">
+            <h3>DRAM Memory Slot</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button14">
+            <h3>IDE Connector</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button15">
+            <h3>AGP Slot</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        
+        <div id="aboutfunction">
+          <button id="button16">
+            <h3>PCI slot</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button17">
+            <h3>Mouse and keyboard ports</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button18">
+            <h3>Power supply connector</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button19">
+            <h3>Parallel port</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button20">
+            <h3> FDC</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button21">
+            <h3>DIP Switch</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+
+      </div>
+      <img src="2D board.png">
+     <!--<img src="./engine.png">--> 
+    </div>
+   </div>
+
+
+
+        </div>
+      </div>
+  </div>
+
+  <script src="./board.js"></script>
+  <script src="script.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</body>
+
+</html>
