@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Human Skeleton</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="nav">
+
+    </div>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="male_skeleton.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+
+    <div class="details">
+      <h2>Functions of Heart</h2>
+      <P><b>Position of Heart in Human Body :</b> The human heart is located between the lungs in the thoracic cavity,
+        slightly towards the left of the sternum (breastbone). <br>It is derived from the embryonic mesodermal germ layer.
+      </P>
+      <p><b>The Function of Heart : </b>
+        The function of the heart in any organism is to maintain a constant flow of blood throughout the body. This
+        replenishes oxygen and <br>circulates nutrients among the cells and tissues.
+        <br>
+        <b>Following are the main functions of the heart:</b><br>
+  
+        One of the primary functions of the human heart is to pump blood throughout the body. Blood delivers oxygen,
+        hormones, glucose and other components to <br>various parts of the body, including the human heart. The heart also
+        ensures that adequate blood pressure is maintained in the body
+      </p>
+      <p><b>Structure of the Human Heart:</b><br>
+        The human heart is about the size of a human fist and is divided into four chambers, namely two ventricles and two
+        atria. The ventricles are the chambers that <br>pump blood and the atrium are the chambers that receive blood.
+        Among these both the right atrium and ventricle make up the “right heart,” and the left atrium <br>and ventricle
+        make up the “left heart.” The structure of the heart also houses the biggest artery in the body – the aorta.
+        The right and the left region of the heart are <br>separated by a wall of muscle called the septum. The right
+        ventricle pumps the blood to the lungs for re-oxygenation through the pulmonary arteries. The right <br>semilunar
+        valves close and prevent the blood from flowing back into the heart. Then, the oxygenated blood is received by
+        the left atrium from the lungs via the <br>pulmonary veins. Read on to explore more about the
+        structure of the heart.
+      </P>
+    </div>
+    <div class="parts">
+      <div class="main">
+        <h1 style="color: white;">Parts of Human Heart</h1>
+        <div class="box">
+          <div class="box1">
+            <a class="boxes" href="./Details/chamber.html">
+              <h3 style="padding: 0 0 ;">Chamber</h3><img src="./IMAGE/chamber.png">
+            </a>
+            <a class="boxes" href="./Details/Arteries and veins.html">
+              <h3 style="padding: 0 0 ;">Arteries and Veins</h3><img src="./IMAGE/Arteries and veins.png">
+            </a>
+            <a href="./Details/CardiacCycle.html" class="boxes">
+              <h3 style="padding: 0 0;" class="text"></h3>Cardiac Cycle</h3><img src="./IMAGE/cardiac.png" alt="">
+            </a>
+  
+            <!-- <a class="boxes" href="./Details/chamber.html" ><h3 style="padding: 0 0 ;">Chamber</h3><img src="./IMAGE/chamber.png"></a>
+          <a class="boxes" href="./Details/chamber.html" ><h3 style="padding: 0 0 ;">Chamber</h3><img src="./IMAGE/chamber.png"></a> -->
+          </div>
+          <div class="box2">
+            <a class="boxes" href="./Details/valves.html">
+              <h3 style="padding: 0 0 ;">Valves</h3><img src="./IMAGE/valves.png">
+            </a>
+            <a class="boxes" href="./Details/wall.html">
+              <h3 style="padding: 0 0 ;">Wall</h3><img class="wall" src="./IMAGE/Wall.png">
+            </a>
+  
+            <a class="boxes" href="./Details/conductionsystem.html">
+              <h3 style="padding: 0 0 ;" class="text">Conduction system</h3><img src="./IMAGE/conduction system.png">
+            </a>
+          </div>
+          <div class="box3">
+            <a href="./Details/ventricles.html" class="boxes">
+              <h3 style="padding: 0 0;">Ventricles</h3><img src="./IMAGE/ventricles.png" alt="">
+            </a>
+  
+            <a href="./Details/Bloodcirculation.html" class="boxes">
+              <h3>Blood Circulation</h3><img src="./IMAGE/Blood circulation.png" alt="">
+            </a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>

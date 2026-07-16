@@ -1,0 +1,251 @@
+:not(:defined) > * {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+p {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#ffffff ;
+}
+
+.nav {
+  height: 60px;
+  width: 82vw;
+  margin: 5px 0;
+  background-color: #172843;
+  position: relative;
+  left: 120px;
+  border-radius: 15px;
+}
+
+model-viewer {
+  width: 82vw;
+  height: 95%;
+  background-color: #ffffff;
+  position: relative;
+  left: 120px;
+  border-radius: 20px;
+}
+
+
+.progress-bar {
+  display: block;
+  width: 33%;
+  height: 10%;
+  max-height: 2%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 25px;
+  box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5), 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar.hide {
+  visibility: hidden;
+  transition: visibility 0.3s;
+}
+
+.update-bar {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 0%;
+  height: 100%;
+  border-radius: 25px;
+  float: left;
+  transition: width 0.3s;
+}
+
+#ar-button {
+  background-image: url(./ar_icon.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 16px;
+  padding: 0px 16px 0px 40px;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color:#4285f4;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid #DADCE0;
+}
+
+#ar-button:active {
+  background-color: #E8EAED;
+}
+
+#ar-button:focus {
+  outline: none;
+}
+
+#ar-button:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+@keyframes circle {
+  from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+  to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@keyframes elongate {
+  from { transform: translateX(100px); }
+  to   { transform: translateX(-100px); }
+}
+
+model-viewer > #ar-prompt {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  animation: elongate 2s infinite ease-in-out alternate;
+  display: none;
+}
+
+model-viewer[ar-status="session-started"] > #ar-prompt {
+  display: block;
+}
+
+model-viewer > #ar-prompt > img {
+  animation: circle 4s linear infinite;
+}
+
+.details {
+  margin: 5px 0;
+  height: 80vh;
+  width: 82vw;
+  color: white;
+  text-align: center ;
+  font-size: 25px;
+  background-color: #172843;
+  border: 2px solid black;
+  border-radius: 30px;
+  position: relative;
+  left: 118px;
+}
+
+.parts {
+  height: 900px;
+  width: 1518px;
+  /* background-color: #20509d; */
+  text-align: center;
+}
+
+.main {
+  width: 82vw;
+  height: 900px;
+  margin: 5px 0;
+  position: relative;
+  left: 120px;
+  background-image: url(./IMAGE/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172843;
+  background-blend-mode: soft-light;
+  border: 2px solid black;
+  border-radius: 30px;
+
+}
+
+.box {
+  /* left: 120px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-image: url(./IMAGE/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172843;
+  background-blend-mode: soft-light; */
+  width: 82vw;
+  height: 90%;
+  display: flex;
+  position: relative;
+
+}
+
+.box::before {
+  position: absolute;
+  background-image: url(./IMAGE/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  /* background-blend-mode: soft-light; */
+}
+
+.box1 {
+  width: 30%;
+  position: relative;
+  left: 150px;
+}
+.box2 {
+  width: 30%;
+  position: relative;
+  left: 150px;
+}
+
+.box3 {
+  width: 30%;
+  position: relative;
+  left: 150px;
+}
+
+.boxes {
+  height: 230px;
+  width: 210px;
+  margin: 20px 20px;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  transition: all ease-in-out 1s;
+}
+
+.wall {
+  position: relative;
+  bottom: 25px;
+}
+
+.text {
+  margin: 80px 0 0 0;
+  position: relative;
+  top: 10px;
+}
+.boxes:hover {
+  /* border-radius: 50%; */
+  /* animation: boxanimation 1.2s ; */
+  scale: 1.3;
+  opacity: 1;
+  /* box-shadow: 10px 10px 10px #706a6a, -5px -5px 10px #706a6a; */
+  filter: drop-shadow(1px 1px 20px yellow);
+  cursor: pointer;
+}
+
+@keyframes boxanimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
