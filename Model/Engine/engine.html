@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Heart</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="./engine.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="img-fluid1" src="./logo.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#parts">Parts</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+  <!-- <model-viewer> HTML element -->
+  <model-viewer id="model" src="./bike_engine.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    </div>
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">View in your space</button>
+    <div id="ar-prompt">
+      <img src="ar_hand_prompt.png">
+    </div>
+  </model-viewer>
+
+
+
+  <div class="details" id="function">
+    <h2>Working Principle</h2>
+    <P> Internal combustion is the basis for how a bike engine works; it typically uses a four-stroke cycle. The four
+      separate phases of this cycle are the intake,<br> compression, power, and exhaust. A mixture of fuel and air can
+      enter the combustion chamber during the intake stroke when the piston descends and the<br> intake valve opens.
+      This air-fuel mixture is compressed to raise its temperature and pressure as the piston rises during the
+      compression stroke. In order<br> to avoid leaks, the intake and exhaust valves stay closed during compression.
+    </P>
+    <p>
+      A spark plug ignites the compressed air-fuel mixture when the piston reaches the top of the cylinder. The power
+      stroke, which is started by this ignition,<br> is when the combustion gasses rapidly expand, forcing the piston
+      downward and producing the energy needed to move the crankshaft. This linear velocity<br> is subsequently
+      transformed into rotational motion via the crankshaft, propelling the motorcycle's wheels. Following this, the
+      exhaust stroke happens, <br>during which the exhaust valve opens and the piston rises once more, releasing the
+      burned gasses into the exhaust system.</<br>
+    </p>
+    <p>
+      The piston, crankshaft, valves, spark plug, and fuel delivery system—which may consist of a fuel injector or a
+      carburetor—are important parts of<br> this process.
+      The timing system of the engine makes sure that the valves open and close in perfect synchronization with the
+      piston's movement. <br>Engines are either liquid-cooled or air-cooled, depending on the design, and
+      proper cooling and lubricating systems are necessary to keep them from overheating.<br>
+    </P>
+    <div id="aboutfunction">
+      <button id="function">
+        <h3>Voice</h3><img src="./volume.svg" alt="" srcset="">
+      </button>
+      <div id="function-detail"></div>
+    </div>
+  </div>
+
+
+
+
+    <div class="parts" id="parts">
+      <div class="main">
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button1">
+            <h3>Camshaft</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button2">
+            <h3>Carburetor</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button3">
+            <h3>Coil</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button4">
+            <h3>Connecting Rod</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button5">
+            <h3>Crankshaft</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button6">
+            <h3>Cylinder</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button7">
+            <h3>Dynamo</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button8">
+            <h3>Exhaust Pipe</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button9">
+            <h3>Exhaust Valve</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button10">
+            <h3>Float Chamber</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button11">
+            <h3>Fly Wheel</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button12">
+            <h3>Gear</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button13">
+            <h3>Gear Driving Camshaft</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button14">
+            <h3>Inlet Valve</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button15">
+            <h3>Jet</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button16">
+            <h3>Oil Pump</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button17">
+            <h3>Piston</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button18">
+            <h3>Piston Ring</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+      </div>
+      <div class="funct button">
+        <div id="aboutfunction">
+          <button id="button19">
+            <h3>Spark Plug</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+        <div id="aboutfunction">
+          <button id="button20">
+            <h3>Starter Motor</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button21">
+            <h3>Throttle</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button22">
+            <h3>Toothed</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button23">
+            <h3>Valve Spring</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button24">
+            <h3>Water Jacket</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+        <div id="aboutfunction">
+          <button id="button25">
+            <h3>Water Pump</h3>
+          </button>
+          <div id="function-detail"></div>
+        </div>
+
+      </div>
+      <img src="./engine.png">
+    </div>
+  </div>
+  <div class="two"></div>
+    <div class="qr">
+      <img style="height: 90vh;" src="./EngineQR.png" alt="" srcset="">
+      <h1>AR VIEWER</h1>
+    </div>
+  </div>
+  
+  <script src="./engine2.js"></script>
+  <script src="engine.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</body>
+
+</html>
